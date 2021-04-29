@@ -4,7 +4,8 @@
   "description": "backend for sneakerstore",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "rowdy-logger": "^1.0.2",
     "sequelize": "^6.6.2",
     "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
