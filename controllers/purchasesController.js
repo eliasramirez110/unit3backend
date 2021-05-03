@@ -2,6 +2,15 @@ const models = require('../models')
 
 const purchaseController = {}
 
+purchaseController.store = async(req, res) => {
+  try {
+    const sneakers = await models.sneaker.findAll()
+    res.json({sneakers})
+  } catch (error) {
+    res.json({error})    
+  }
+}
+
 purchaseController.create = async(req, res) => {
   try {
     const purchase = await models.purchase.create({
